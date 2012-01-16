@@ -1,0 +1,11 @@
+.zaloha
+*.te~
+*.dvi
+*.aux
+*.idx
+*.ilg
+*.ind
+*.log
+*.out
+*.toc
+*.swp

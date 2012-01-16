@@ -1,0 +1,82 @@
+\documentclass[a4paper,11pt,titlepage,twocolumn,openany,oneside]{book}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{czech}
+\usepackage{color}                    % For creating coloured text and background
+\usepackage{hyperref}                 % For creating hyperlinks in cross references
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{makeidx}
+
+%\newindex{default}{idx}{ind}{Rejstřík} %index package
+
+\definecolor{ColorLink}{cmyk}{1,0.2,0,0.7}
+\hypersetup{colorlinks=true,linkcolor=ColorLink}
+
+\makeindex
+
+\title{Přípravy na maturitu z~českého jazyka}
+\author{Pavel Lang}
+\date{2003\\Omluvte prosím moji polovičatou práci\dots{}}
+
+\hyphenation{Chel-čic-ký prok-lá-dá čas-to}
+
+\newcommand{\jmeno}[1]{\textbf{\emph{#1}}\index{#1}}
+\newcommand{\jmena}[2]{\textbf{\emph{#1}}\index{#2}}
+
+\newcommand{\dilo}[1]{\emph{\uv{#1}}}
+\newcommand{\pojem}[1]{\emph{#1}}
+\newcommand{\rok}[1]{\emph{#1}}
+
+\newcommand{\delic}{\begin{center}\vspace{-1mm}*~~~*~~~*\end{center}\vspace{-2mm}}
+
+\addtolength{\topmargin}{-1cm} %predtim -2
+\makeindex{}
+
+\begin{document}
+\frontmatter
+\maketitle
+\tableofcontents
+
+\mainmatter
+
+\chapter{Nejstarší památky světové literatury}
+
+\chapter{Nejstarší památky české literatury}
+
+\input{l03.tex}
+
+\input{l04.tex}
+
+\input{l05.tex}
+
+\input{l06.tex}
+
+\input{l07.tex}
+
+\input{l08.tex}
+
+\input{l09.tex}
+
+\input{l10.tex}
+
+\input{l11.tex}
+
+\input{l12.tex}
+
+\input{l13.tex}
+
+\input{l14.tex}
+
+\input{l15.tex}
+
+\input{l16.tex}
+
+\input{l17.tex}
+
+%\backmatter
+\onecolumn
+\appendix
+\input{appendix.tex}
+
+\printindex{}
+\end{document}
